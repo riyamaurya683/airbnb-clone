@@ -78,7 +78,7 @@ app.use(express.static(path.join(__dirname, "/public")));
 app.use(express.static(path.join(__dirname, "layouts")));
 
 const sessionOptions = {
- secret: process.env.SECRET,
+ secret: "mysupersecretcode",
   resave: false,
  saveUninitialized: true,
   cookie: {
